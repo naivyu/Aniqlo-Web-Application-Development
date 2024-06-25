@@ -1,0 +1,157 @@
+.wrapper {
+	display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Stack the items vertically */
+    height: 100vh; /* Make the wrapper take up the full height of the viewport */
+}
+
+.content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content h1 {
+	position: relative;
+	text-align: center;
+}
+
+.success-message, .error-message {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #4CAF50; /* Green border for success */
+    background-color: #E8F5E9; /* Light green background for success */
+    text-align: center; /* Center the text */
+}
+
+.error-message {
+    border-color: #f44336; /* Red border for error */
+    background-color: #ffebee; /* Light red background for error */
+}
+
+.form {
+    position: relative;
+    max-width: 800px; /* Set max-width instead of fixed width */
+    width: 100%; /* Use 100% width to allow responsiveness */
+    margin: 0 auto; /* Center horizontally */
+
+}
+
+.input-box, .textarea {
+    width: 100%; /* Set to 100% to adjust based on container width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-box {
+    width: 400px;
+    height: 40px;
+}
+
+.textarea {
+    width: 400px;
+    height: 200px;
+    min-height: 30px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+#button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+#button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#button:hover {
+    background-color: #0055CC;
+	transform: scale(1.05);
+}
+
+#emailDetail a,
+#facebookDetail a,
+#instagramDetail a {
+	color: black; /* Set the text color to red */
+	text-decoration: none; /* Remove the underline */
+}
+
+#emailDetail a:hover,
+#facebookDetail a:hover,
+#instagramDetail a:hover {
+	color: red;
+	text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 768px) { /* Adjust below styles when window size is less than 768px */
+    .form-box {
+        padding: 15px;
+    }
+
+    .input-box, .textarea {
+        font-size: 16px; 
+    }
+
+    #button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+.invalidInput{
+	background-color: salmon;
+}
+
+.validInput{
+	background-color: lightgreen;
+}
+
+.form label {
+	float: left;
+	display:block;
+	width: 200px;
+	padding: 10px;
+	text-align:left;
+}
+
+.form input {
+	display: block;
+	padding: 5px;
+	width: 50%;
+}
+
+.error{
+	display:block;
+	padding:5px;
+	float: none;
+	color: red;
+}
+
+.asterisk{
+    color: red; 
+	padding-left: 5px;
+}

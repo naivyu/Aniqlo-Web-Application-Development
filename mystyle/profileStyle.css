@@ -1,0 +1,80 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* Wrapper to contain both sidebar and profile */
+.wrapper {
+	display: flex;
+	justify-content: center; /* Center the content */
+	align-items: flex-start;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Sidebar */
+.sidebar {
+	width: 150px;
+	padding: 20px 20px 20px 20px; /* Equal top, right, bottom, and left padding */
+	position: relative;
+}
+
+.sidebar a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	text-align: center;
+	margin-top: 20px;
+	transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+	background-color: #f8f8f8;
+	transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Profile Container */
+.profile-container {
+	flex: 1;
+	margin-left: 30px; /* Space between sidebar and profile container */
+	margin-right: 30px; /* Space between profile container and footer */
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px 30px;
+	width: 80%; /* Make it 80% of the parent container */
+	max-width: 800px; /* Set a maximum width */
+	display: flex;
+	justify-content: space-between; /* Spread the two profile sections */
+	align-items: flex-start;
+}
+
+.profile-info-left, .profile-info-right {
+	text-align: left;
+	padding: 10px 25px;
+}
+
+.profile-info-left {
+	flex: 1; /* Allow the left section to take available space */
+	padding-right: 15px; /* Add some space to the right */
+}
+
+.profile-info-right {
+	flex: 1; /* Allow the right section to take available space */
+	padding-left: 15px; /* Add some space to the left */
+	padding-top: 140px;
+}
+
+.profile-info-left h3,
+.profile-info-right h3,
+.profile-info-left p,
+.profile-info-right p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
